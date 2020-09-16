@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online shopping, I-Electronics">
+    <title>I-Electronics</title>
+    <!-- importing two css files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- importing javascript -->
+    <script type="text/javascript" src="./java-script/main.js"></script>
+  </head>
+  <body>
+    <!-- header part of the webpage-->
+    <header>
+      <div class="container">
+        <div class="company">
+          <!-- highlighting -->
+          <h1><span class="highlight"><a href="Home.html">I</span>-Electronics</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><span class="highlight"><a href="Products.html">Products</a></span></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Research.html">Research</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section part of the webpage -->
+    <section class="container">
+      <!-- creating list of items  -->
+      <div class="item"
+        <ul>
+          <li>
+            <img src="./image/Acer_AspireS5_tn.jpg">
+            <h4>Acer Aspire S5</h4>
+            <h5>Price:- $1,090</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Acer_AspireS3_tn_1.jpg">
+            <h4>Acer Aspire S3</h4>
+            <h5>Price:- $1,120</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/JM41-X-CP-W03(001).jpg">
+            <h4>Acer Aspire Timeline X</h4>
+            <h5>Price:- $1,877</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/applethumb.jpg">
+            <h4>Apple MacBook Pro</h4>
+            <h5>Price:- $2,323</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/thumbxl_22.jpg">
+            <h4>Apple MacBook Pro</h4>
+            <h5>Price:- $1,911</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Apple's_Macbook_Final.jpg">
+            <h4>Apple's MacBook</h4>
+            <h5>Price:- $909</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/m17xthmb.jpg">
+            <h4>Dell Alienware M17X R3</h4>
+            <h5>Price:- $1,234</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Dell_XPS15z_tn.jpg">
+            <h4>Dell XPS 15z </h4>
+            <h5>Price:- $879</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Dell_XPS14z_tn_0.jpg">
+            <h4>Dell XPS 14z</h4>
+            <h5>Price:- $1,989</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Lenovo_IdeaPadY570_tn.jpg">
+            <h4>Lenovo IdeaPad Y570</h4>
+            <h5>Price:- $1,222</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Lenovo_ThinkPadX1_tn.jpg">
+            <h4>Lenovo ThinkPad X1</h4>
+            <h5>Price:- $2,322</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/Lenovo_IdeaPadS100_tn.jpg">
+            <h4>Lenovo IdeaPad S100</h4>
+            <h5>Price:- $2,802</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/hpf13thumb.jpg">
+            <h4>HP Folio 13-1012TU</h4>
+            <h5>Price:- $1,200</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/hp-envy-15_1.jpg">
+            <h4>HP Envy 15</h4>
+            <h5>Price:- $1,322</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+          <li>
+            <img src="./image/HP_Paviliondv4_tn.jpg">
+            <h4>HP Pavilion dv4-3020TX</h4>
+            <h5>Price:- $822</h5>
+            <a class="button" href="#popup1">Buy</a>
+          </li>
+        </ul>
+        <!-- creating a design for popup -->
+        <div id="popup1" class="overlay">
+         <div class="popup">
+             <h2>Please Register first!</h2>
+               <a class="close" href="#">&times;</a>
+              <div class="content">
+              <form onsubmit="return register();" action="Products.html">
+                      <!-- inline css -->
+                      <label style="color: red; visibility: hidden;" id="label_invalid">Invalid!!!</label>
+                      <br>
+                      <input type="text" id="userName" placeholder="Username" class="form_contain">
+                      <input type="password" id="password" placeholder="Password" class="form_contain">
+                      <input type="text" id="fullname" placeholder="Fullname" class="form_contain">
+                      <input type="text" id="address" placeholder="Address" class="form_contain">
+                      <input type="email" id="email" placeholder="Email Address" class="form_contain">
+                      <input type="text" id="phone" placeholder="Phone Number" class="form_contain">
+                      <button type="submit">Register</button>
+                  </form>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer part of the webpage -->
+    <footer >
+      <p>Copyright &copy 2019, I-Electronics </p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/* customizing the size of button */
+.button {
+	font-size: 1em;
+	padding: 5px;
+	color: black;
+	border: 2px solid #06D85F;
+	border-radius: 20px/50px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+/*making the background of button change when hovered*/
+.button:hover {
+	background: #06D85F;
+}
+/*adjusting the popup and making it hidden*/
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+/*making the popup visible when the target is selected*/
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+/*adjusting the position and size*/
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+  height: 40%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+/*customizing the h2 tag*/
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+}
+/*making a close button*/
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+/*make the popup such that it close when hovered */
+.popup .close:hover {
+	color: #06D85F;
+}
+/*adjusting the popup */
+.popup .content {
+	overflow: none;
+}
+/*adjusting form container*/
+.form_contain{
+	margin: 10px;
+	display: inline-flex;
+}
+
+button{
+	position: absolute;
+	bottom: 0px;
+	left: 30px;
+}
